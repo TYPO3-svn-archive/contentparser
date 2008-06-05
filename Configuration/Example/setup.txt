@@ -1,0 +1,71 @@
+plugin.F3_Contentparser.Settings {
+
+	# basic settings
+	termProperties = uid,pid,term,synonyms,termType,replacement,language,shortDescription,longDescription,link,exclude,sortField,linkToListPage,listPages,listTerm,checkPreAndPostMatches,addTitleAttribute,addLangAttribute,addCssClassAttribute,replaceTerm,tag,cssClass,updateKeywords,termIsRegEx,termStdWrap,preStdWrap,postStdWrap
+
+	# controller settings
+	listPages = 214
+	storagePids = 
+	includeRootPages = 47
+	excludeRootPages = 
+	includePages = 
+	excludePages = 
+
+	# matcher settings
+	checkPreAndPostMatches = 1
+	excludeTags = h1,h2,h3,h4,h5,h6,a
+	# autoExcludeTags = 1
+	modifier = Uuis
+
+	# tagger settings
+	linkToListPage = 1
+	addTitleAttribute = 1
+	addLangAttribute = 1
+	addCssClassAttribute = 1
+	replaceTerm = 1
+
+	# view settings
+	addBackLinkDescription = 1
+	showOnlyMatchedIndexChars = 0
+	labelWrap = |<strong>|:</strong> |
+	listTerm = 1
+
+	types {
+		person {
+			label.default = Person
+			label.de = Person
+			tag = span
+			dataSource = addresses
+			sortField = mainTerm
+		}
+	}
+
+	sources {
+		addresses {
+			sourceName = tt_address
+			type = sql
+			mapping {
+				uid.field = uid
+				pid.field = pid
+				mainTerm.field = name
+				termType.value = person
+				street.field = address
+				zip.field = zip
+				city.field = city
+				shortDescription.stdWrap.dataWrap = {register:contentparser_street}, {register:contentparser_zip} {register:contentparser_city}
+				longDescription.stdWrap.dataWrap = {register:contentparser_street}<br />{register:contentparser_zip} {register:contentparser_city}
+			}
+		}
+	}
+}
+
+plugin.F3_Contentparser {
+	_CSS_DEFAULT_STYLE (
+		span.f3-contentparser-widget-index-act {
+			background: #ddd;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #999;
+			
+		}
+	)
+}

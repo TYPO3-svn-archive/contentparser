@@ -1,6 +1,7 @@
 <?php
 if (!defined ('TYPO3_MODE')) die ('Access denied.');
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/', 'Setup');
+t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/Example/', 'Example Settings');
 t3lib_extMgm::addPlugin(array('LLL:EXT:Contentparser/Resources/Language/locallang.xml:terms_list', $_EXTKEY), 'list_type');
 
 // Add a field  "exclude this page from parsing" to the table "pages" and "tt_content"

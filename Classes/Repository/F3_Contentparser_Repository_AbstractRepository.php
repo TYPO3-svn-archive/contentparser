@@ -71,13 +71,15 @@ class F3_Contentparser_Repository_AbstractRepository {
 	 */
 	protected function fetchSources() {
 		$sources = array();
-		foreach ($this->settings['sources'] as $sourceKey => $sourceSetup) {
-			$sourceSetup->sourceKey = $sourceKey;
-			if ($sourceSetup['type'] === 'sql' && $this->sqlSourceExists($sourceSetup)) {
-				$sources[] = $this->componentManager->getComponent('F3_Contentparser_Repository_Source_SQL', $sourceSetup);
-			} elseif ($sourceSetup['type'] === 'soap') {
-				$sources[] = $this->componentManager->getComponent('F3_Contentparser_Repository_Source_SOAP', $sourceSetup);					
-			}
+		if (!empty($this->settings['sources'])) {
+			foreach ($this->settings['sources'] as $sourceKey => $sourceSetup) {
+				$sourceSetup->sourceKey = $sourceKey;
+				if ($sourceSetup['type'] === 'sql' && $this->sqlSourceExists($sourceSetup)) {
+					$sources[] = $this->componentManager->getComponent('F3_Contentparser_Repository_Source_SQL', $sourceSetup);
+				} elseif ($sourceSetup['type'] === 'soap') {
+					$sources[] = $this->componentManager->getComponent('F3_Contentparser_Repository_Source_SOAP', $sourceSetup);					
+				}
+			}			
 		}
 		return $sources;
 	}
