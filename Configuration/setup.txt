@@ -1,0 +1,13 @@
+includeLibs.tx_gimmefive = EXT:gimmefive/Classes/tx_gimmefive.php
+
+# The Parser
+tt_content.text.20.postUserFunc = tx_gimmefive->main
+tt_content.text.20.postUserFunc.controller = F3_Contentparser_Controller_Parser
+tt_content.text.20.postUserFunc.context = Testing
+
+# The List-Plugin
+tt_content.list.20.Contentparser = USER
+tt_content.list.20.Contentparser.userFunc = tx_gimmefive->main
+tt_content.list.20.Contentparser.controller = F3_Contentparser_Controller_Terms
+tt_content.list.20.Contentparser.action = Default
+tt_content.list.20.Contentparser.context = Testing

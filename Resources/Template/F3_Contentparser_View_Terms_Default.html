@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Contentparser Example Template</title>
+</head>
+
+<body>
+	<h1>Contentparser Example Template</h1>
+
+	<h2>TEMPLATE_LIST</h2>
+
+	<!-- ###TEMPLATE_LIST### begin
+		This is the template to display a list of terms
+	-->
+	###INDEX###
+	<dl class="f3-contentparser-list">
+		<!-- ###LIST###-->
+			<!-- ###ITEM###-->
+				<dt><!--###LINK_DETAILS###-->###TERM###<!--###LINK_DETAILS###--></dt>
+				<dd>###SHORT_DESCRIPTION###</dd>
+			<!-- ###ITEM###-->
+		<!-- ###LIST###-->
+	</dl>
+	###INDEX###
+	<!-- ###TEMPLATE_LIST### end -->
+
+	<h2>TEMPLATE_SINGLE</h2>
+
+	<!-- ###TEMPLATE_SINGLE### begin
+		This is the template to display a single term
+	-->
+	<div class="f3-contentparser-navlink"><!--###LINK_TO_LIST###-->###TO_LIST###<!--###LINK_TO_LIST###--></div>
+	<div class="f3-contentparser-navlink"><!--###LINK_BACK_TO###-->###BACK_TO###<!--###LINK_BACK_TO###--></div>
+	<dl class="f3-contentparser-single">
+		<!-- ###ITEM### begin-->		
+		<dt>###TERM###</dt>
+		<dd>###LABEL_SYNONYMS######SYNONYMS###</dd>
+		<dd>###LONG_DESCRIPTION###</dd>
+		<!-- ###ITEM### end-->
+	</dl>
+	<div class="f3-contentparser-navlink"><!--###LINK_TO_LIST###-->###TO_LIST###<!--###LINK_TO_LIST###--></div>
+	<div class="f3-contentparser-navlink"><!--###LINK_BACK_TO###-->###BACK_TO###<!--###LINK_BACK_TO###--></div>
+	<!-- ###TEMPLATE_SINGLE### end -->
+
+
+	<!-- ###TEMPLATE_NO_RESULT### begin
+		This is the template to display a single term
+	-->
+	###NO_RESULT###
+	<!-- ###TEMPLATE_NO_RESULT### end -->
+</body>
+</html>

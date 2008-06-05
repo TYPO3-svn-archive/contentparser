@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for the contentparser FE plugin</description>
+		<type>database</type>
+		<fileId>EXT:contentparser/Resources/Language/locallang.xml</fileId>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="terms_list">Glossary</label>
+			<label index="dont_parse">Don't parse text</label>
+			<label index="header">Glossary</label>
+			<label index="indexChars">0-9|1|2|3|4|5|6|7|8|9|0,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z</label>
+			<!-- <label index="indexChars">0,1,2,3,4,5,6,70,71,72,73,74,75,76,77,78,79,8,9,0</label> -->
+			<label index="na">n/a</label>
+			<label index="details">more details</label>
+			<label index="all">all items</label>
+			<label index="toList">all items</label>
+			<label index="back">back</label>
+			<label index="backToPage">back to page</label>
+			<label index="termType">Type of term</label>
+			<label index="term">Term</label>
+			<label index="mainTerm">Term</label>
+			<label index="synonyms">Synonyms</label>
+			<label index="replacement">Replaced with</label>
+			<label index="language">Term Language</label>
+			<label index="shortDescription">Short Description</label>
+			<label index="longDescription">Long Description</label>
+			<label index="lang.en">en.</label>
+			<label index="lang.fr">fr.</label>
+			<label index="lang.de">ger.</label>
+			<label index="lang.it">it.</label>
+			<label index="lang.es">span.</label>
+			<label index="lang.un">unpolite</label>
+			<label index="no_result">No results.</label>
+			<label index="street">Street</label>
+			<label index="zip">ZIP-Code</label>
+			<label index="city">City</label>
+			<label index="authors">Authors</label>
+			<label index="title">Title</label>
+			<label index="publisher">Publisher</label>
+			<label index="address">Address</label>
+			<label index="year">Year</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="terms_list">Glossar</label>
+			<label index="dont_parse">Text nicht parsen</label>
+			<label index="header">Glossar</label>
+			<label index="indexChars">0-9|1|2|3|4|5|6|7|8|9|0,A|Ä|AE,B,C,D,E,F,G,H,I,J,K,L,M,N,O|Ö|OE,P,Q,R,S,T,U|Ü|UE,V,W,X,Y,Z</label>
+			<label index="na">k.A.</label>
+			<label index="details">mehr Details</label>
+			<label index="all">alle Einträge</label>
+			<label index="toList">alle Einträge</label>
+			<label index="back">zurück</label>
+			<label index="backToPage">zurück zur Seite</label>
+			<label index="termType">Art des Ausdrucks</label>
+			<label index="term">Ausdruck</label>
+			<label index="mainTerm">Ausdruck</label>
+			<label index="synonyms">Synonyme</label>
+			<label index="replacement">Ersetzt durch</label>
+			<label index="language">Sprache</label>
+			<label index="shortDescription">Kurzbeschreibung</label>
+			<label index="longDescription">Ausführliche Beschreibung</label>
+			<label index="lang.en">engl.</label>
+			<label index="lang.fr">franz.</label>
+			<label index="lang.de">dt.</label>
+			<label index="lang.it">ital.</label>
+			<label index="lang.es">span.</label>
+			<label index="lang.un">unhöflich</label>
+			<label index="no_result">Keine Datensätze vorhanden.</label>
+			<label index="street">Straße</label>
+			<label index="zip">PLZ</label>
+			<label index="city">Ort</label>
+			<label index="authors">Autoren</label>
+			<label index="title">Titel</label>
+			<label index="publisher">Verlag</label>
+			<label index="address">Ort</label>
+			<label index="year">Jahr</label>
+		</languageKey>
+	</data>
+</T3locallang>
